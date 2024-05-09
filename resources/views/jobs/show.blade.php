@@ -7,7 +7,11 @@
 
     <ul>
        <li> {{$job['title']}} has {{$job['salary']}} as a salary per year</li>
+    </ul>
 
+
+    <ul>
+        <li> {{$job['title']}} has {{$job->salary}} as a salary per year</li>
     </ul>
 
     <p class="mt-6">

@@ -15,9 +15,16 @@ class Job extends Model
     public static function findById($id)
     {
         $job = Job::find($id);
-        if(! $job){
+        if (!$job) {
             abort(404);
+
         }
         return $job;
     }
+//    public function getidAttribute()
+//    {
+//        // Logic to retrieve the sid value (e.g., from related data)
+//        return $this->attributes['id'];
+//    }
+
 }
